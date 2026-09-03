@@ -1,0 +1,4 @@
+services:
+  djehuty-proof:
+    build: .
+    volumes: ["./djehuty-output:/output"]

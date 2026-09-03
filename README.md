@@ -15,9 +15,15 @@
 - CI tests and GitHub Pages deployment.
 
 ```bash
-python -m pip install -e .
-djehuty report.md --sources ./sources --output audit.json
+# Works immediately after downloading the source or ZIP:
+python run.py samples/report.md --sources samples/sources --output audit.json
+
+# Or install the command globally:
+python -m pip install .
+djehuty samples/report.md --sources samples/sources --output audit.json
 ```
+
+Docker users can run `docker compose up --build`. The runtime has no third-party Python dependency and performs no network request.
 
 ## Research lineage
 

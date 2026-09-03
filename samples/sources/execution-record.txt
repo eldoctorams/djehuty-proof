@@ -1,0 +1,1 @@
+Execution record: the monitoring system processed 500 events. The final review recorded 42 high-risk signals.
